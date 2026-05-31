@@ -29,7 +29,12 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+js
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
   console.log("brbrs AI çalışıyor");
 });
+
+
 console.log(process.env.OPENAI_API_KEY);
